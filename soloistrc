@@ -31,32 +31,18 @@ recipes:
 - sprout-osx-apps::flycut
 - sprout-osx-apps::shiftit
 
-# apps (editors)
-- sprout-osx-apps::textmate_bundles
-- sprout-osx-apps::textmate_preferences
-- sprout-osx-apps::macvim
-- sprout-rubymine
-
 node_attributes:
   sprout:
     git:
-      domain: pivotallabs.com
+      domain: willmilton.com
       authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
+        - initials: wam
+          name: Will Milton
+          username: winmillwill
       projects:
         -
-          name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+          name: mydotfiles
+          url: https://github.com/winmillwill/mydotfiles.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -69,31 +55,44 @@ node_attributes:
       magnification: false
     homebrew:
       formulae:
-        - ctags-exuberant
         - ag
         - chromedriver
+        - ctags-exuberant
+        - ec2-ami-tools
+        - ec2-api-tools
+        - hg
         - imagemagick
         - node
         # - pstree # Skip until download url is fixed: https://github.com/Homebrew/homebrew/pull/35135
         - qt
+        - rbenv-binstubs
+        - rbenv-gem-rehash
+        - reattach-to-user-namespace
         - ssh-copy-id
         - tmux
         - tree
+        - vim
         - watch
         - wget
-        - rbenv-binstubs
-        - rbenv-gem-rehash
+        - youtube-dl
       casks:
-        - ccmenu
+        - alfred
         - firefox
-        - gitx-rowanj
-        - github
         - google-chrome
         - google-drive
         - google-hangouts
+        - karabiner
+        - menumeters
         - skype
-        - textmate
+        - spotify
+        - steam
+        - tomighty
+        - transmission
+        - twine
+        - unity
         - vagrant
         - virtualbox
+        - vmware-fusion6
+        - vlc
         - xquartz
         - xscope

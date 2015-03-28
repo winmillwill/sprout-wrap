@@ -21,7 +21,6 @@ recipes:
 - sprout-git::git_scripts
 
 # development (rails)
-- sprout-rbenv
 - sprout-ruby
 - sprout-mysql
 - sprout-postgresql
@@ -55,32 +54,37 @@ node_attributes:
       magnification: false
     homebrew:
       formulae:
+        # - pstree # Skip until download url is fixed: https://github.com/Homebrew/homebrew/pull/35135
         - ag
         - chromedriver
+        - chruby
         - ctags-exuberant
         - ec2-ami-tools
         - ec2-api-tools
         - hg
         - imagemagick
+        - iftop
         - node
-        # - pstree # Skip until download url is fixed: https://github.com/Homebrew/homebrew/pull/35135
         - qt
-        - rbenv-binstubs
-        - rbenv-gem-rehash
         - reattach-to-user-namespace
+        - ruby-install
         - ssh-copy-id
         - tmux
         - tree
         - vim
         - watch
         - wget
+        - wireshark
         - youtube-dl
       casks:
         - alfred
         - firefox
+        - flux
         - google-chrome
         - google-drive
+        - google-earth-web-plugin
         - google-hangouts
+        - java
         - karabiner
         - menumeters
         - skype
@@ -89,10 +93,9 @@ node_attributes:
         - tomighty
         - transmission
         - twine
-        - unity
         - vagrant
         - virtualbox
-        - vmware-fusion6
         - vlc
+        - vmware-fusion6
         - xquartz
         - xscope

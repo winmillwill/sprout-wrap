@@ -61,6 +61,7 @@ node_attributes:
         - ctags-exuberant
         - ec2-ami-tools
         - ec2-api-tools
+        - gptfdisk
         - hg
         - imagemagick
         - iftop
@@ -68,6 +69,7 @@ node_attributes:
         - qt
         - reattach-to-user-namespace
         - ruby-install
+        - seil
         - ssh-copy-id
         - tmux
         - tree
@@ -92,10 +94,11 @@ node_attributes:
         - steam
         - tomighty
         - transmission
-        - twine
         - vagrant
         - virtualbox
         - vlc
         - vmware-fusion6
         - xquartz
         - xscope
+      taps:
+        - caskroom/versions

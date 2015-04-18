@@ -1,4 +1,9 @@
 #!/bin/bash
 
-wget https://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.8/x86_64/chefdk-0.4.0-1.dmg
-open chefdk-0.4.0-1.dmg
+version="0.4.0-1"
+file="chefdk-${version}.dmg"
+if [[ ! -f $file ]]
+then
+  wget "https://opscode-omnibus-packages.s3.amazonaws.com/mac_os_x/10.8/x86_64/${file}"
+fi
+open $file

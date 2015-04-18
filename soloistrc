@@ -1,106 +1,109 @@
+---
 recipes:
-
-# base (required by sprout)
 - sprout-base
 - sprout-base::bash_it
 - sprout-base::homebrew
 - sprout-homebrew
-
-# settings
 - sprout-osx-settings
 - sprout-osx-settings::dock_preferences
 - sprout-terminal
 - sprout-terminal::update_font
 - sprout-ssh::known_hosts_github
-
-# development (general)
 - sprout-base::workspace_directory
 - sprout-git
 - sprout-git::default_editor
 - sprout-git::projects
 - sprout-git::git_scripts
 - sprout-ruby
-
-# apps
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::flycut
 - sprout-osx-apps::shiftit
-
 node_attributes:
   sprout:
     git:
       domain: willmilton.com
       authors:
-        - initials: wam
-          name: Will Milton
-          username: winmillwill
+      - initials: wam
+        name: Will Milton
+        username: winmillwill
       projects:
-        -
-          name: mydotfiles
-          url: https://github.com/winmillwill/mydotfiles.git
+      - name: mydotfiles
+        url: https://github.com/winmillwill/mydotfiles.git
     terminal:
-      default_profile: 'Pro'
+      default_profile: Pro
     settings:
       clock_format: EEE MMM d  h:mm:ss a
     dock_preferences:
-      orientation: 'left'
+      orientation: left
       auto_hide: true
       clear_apps: true
       tile_size: 35
       magnification: false
     homebrew:
       formulae:
-        # - pstree # Skip until download url is fixed: https://github.com/Homebrew/homebrew/pull/35135
-        - ag
-        - chromedriver
-        - chruby
-        - ctags-exuberant
-        - docker
-        - ec2-ami-tools
-        - ec2-api-tools
-        - gist
-        - gptfdisk
-        - gnu-tar
-        - hg
-        - hub
-        - imagemagick
-        - iftop
-        - node
-        - python
-        - qt
-        - reattach-to-user-namespace
-        - ruby-install
-        - ssh-copy-id
-        - tmux
-        - tree
-        - vim
-        - watch
-        - wget
-        - wireshark
-        - youtube-dl
+      - ack
+      - awscli
+      - bash-completion
+      - brew-cask
+      - chromedriver
+      - chruby
+      - ctags
+      - docker
+      - ec2-ami-tools
+      - ec2-api-tools
+      - gist
+      - git
+      - gnu-tar
+      - gnupg
+      - gpg-agent
+      - gptfdisk
+      - hub
+      - iftop
+      - imagemagick
+      - mercurial
+      - mysql
+      - node
+      - pass
+      - postgresql
+      - python
+      - qt
+      - reattach-to-user-namespace
+      - ruby-install
+      - ssh-copy-id
+      - the_silver_searcher
+      - tmux
+      - vim
+      - watch
+      - wget
+      - wireshark
+      - youtube-dl
       casks:
-        - alfred
-        - firefox
-        - flux
-        - fbreader
-        - google-chrome
-        - google-drive
-        - google-earth-web-plugin
-        - google-hangouts
-        - java
-        - karabiner
-        - menumeters
-        - seil
-        - skype
-        - spotify
-        - steam
-        - tomighty
-        - transmission
-        - vagrant
-        - virtualbox
-        - vlc
-        - vmware-fusion6
-        - xquartz
-        - xscope
+      - alfred
+      - fbreader
+      - firefox
+      - flux
+      - git-annex
+      - google-chrome
+      - google-drive
+      - google-earth-web-plugin
+      - google-hangouts
+      - haskell-platform
+      - iterm2
+      - java
+      - karabiner
+      - menumeters
+      - seil
+      - skype
+      - spotify
+      - steam
+      - tomighty
+      - transmission
+      - vagrant
+      - virtualbox
+      - vlc
+      - vmware-fusion6
+      - xquartz
+      - xscope
       taps:
-        - caskroom/versions
+      - caskroom/versions
+      - phinze/cask

@@ -91,7 +91,7 @@ node_attributes:
       - git-annex
       - google-chrome
       - google-drive
-      - google-earth-web-plugin
+      # - google-earth-web-plugin doesn't work right now
       - google-hangouts
       - haskell-platform
       - iterm2

@@ -11,3 +11,11 @@ pushed. Part of the concern is that stupid commit messages are a workflow smell.
 
 I guess the trivial solution is to put more information about why I'm doing what
 I'm doing in the commit messages.
+
+* pip maintenance and pip installation of powerline etc
+* patched font install for powerline
+* vim install flags and ruby version snafu
+* solarized colors for iterm
+* weird behavior in viminit.sh
+* something dumb happened with google-earth
+* run various linkin scripts

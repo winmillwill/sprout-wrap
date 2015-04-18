@@ -29,6 +29,12 @@ node_attributes:
       projects:
       - name: mydotfiles
         url: https://github.com/winmillwill/mydotfiles.git
+      - name: projects
+        url: https://github.com/winmillwill/projects.git
+      - name: bash_it_custom
+        url: https://github.com/winmillwill/bash_it_custom.git
+      - name: pass_multiline
+        url: https://github.com/winmillwill/pass_multiline.git
     terminal:
       default_profile: Pro
     settings:

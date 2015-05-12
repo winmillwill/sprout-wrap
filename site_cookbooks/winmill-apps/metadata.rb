@@ -1,0 +1,10 @@
+name             'winmill-apps'
+maintainer       'The Authors'
+maintainer_email 'you@example.com'
+license          'all_rights'
+description      'Installs/Configures winmill-apps'
+long_description 'Installs/Configures winmill-apps'
+version          '0.1.0'
+
+depends 'homebrew'
+depends 'python'

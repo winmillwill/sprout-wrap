@@ -15,9 +15,9 @@ recipes:
 - sprout-git::projects
 - sprout-git::git_scripts
 - sprout-ruby
-- sprout-osx-apps::iterm2
 - sprout-osx-apps::flycut
 - sprout-osx-apps::shiftit
+- winmill-apps::iterm2
 node_attributes:
   sprout:
     git:
@@ -54,9 +54,10 @@ node_attributes:
       - chromedriver
       - chruby
       - ctags
-      - docker
+      - docker-machine
       - ec2-ami-tools
       - ec2-api-tools
+      - fig
       - gist
       - git
       - gnu-tar
@@ -88,10 +89,11 @@ node_attributes:
       - fbreader
       - firefox
       - flux
+      - gimp
       - git-annex
       - google-chrome
       - google-drive
-      # - google-earth-web-plugin doesn't work right now
+      - google-earth-web-plugin
       - google-hangouts
       - haskell-platform
       - iterm2

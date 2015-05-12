@@ -13,9 +13,18 @@ I guess the trivial solution is to put more information about why I'm doing what
 I'm doing in the commit messages.
 
 * pip maintenance and pip installation of powerline etc
+  * had to awkwardly fork python cookbook for mac_os_x
 * patched font install for powerline
+  * pretty easy, just cloning and installing in the recipe
 * vim install flags and ruby version snafu
 * solarized colors for iterm
+  * actually handled already, just didn't apply without restarting iterm
 * weird behavior in viminit.sh
 * something dumb happened with google-earth
+  * nature of underlying archive changed, patch accepted upstream
 * run various linkin scripts
+* persist config changes
+  * karabiner
+  * iterm
+  * menumeters
+* gdrive (add a homebrew formla?)

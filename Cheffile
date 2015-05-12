@@ -2,6 +2,10 @@
 
 site 'https://supermarket.getchef.com/api/v1'
 
+cookbook 'python',
+  :github => 'winmillwill/python',
+  :ref => 'mac_os_x'
+
 cookbook 'sprout-rbenv',
   :github => 'pivotal-sprout/sprout-rbenv'
 
@@ -40,3 +44,6 @@ cookbook 'sprout-postgresql',
 
 cookbook 'sprout-ssh',
   :github => 'pivotal-sprout/sprout-ssh'
+
+cookbook 'winmill-apps',
+  :path => 'site_cookbooks/winmill-apps'

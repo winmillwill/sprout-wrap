@@ -1,10 +1,13 @@
 SITE
   remote: https://supermarket.getchef.com/api/v1
   specs:
-    build-essential (2.1.3)
+    build-essential (2.2.3)
     dmg (2.2.2)
     homebrew (1.12.0)
       build-essential (>= 2.1.2)
+    yum (3.6.0)
+    yum-epel (0.6.0)
+      yum (~> 3.0)
 
 GIT
   remote: https://github.com/pivotal-sprout/osx
@@ -120,8 +123,25 @@ GIT
       osx (>= 0.0.0)
       sprout-base (>= 0.0.0)
 
+GIT
+  remote: https://github.com/winmillwill/python
+  ref: mac_os_x
+  sha: 3540654bd16fe4d766af8623104a8bd5aa64a65e
+  specs:
+    python (1.4.7)
+      build-essential (>= 0.0.0)
+      yum-epel (>= 0.0.0)
+
+PATH
+  remote: site_cookbooks/winmill-apps
+  specs:
+    winmill-apps (0.1.0)
+      homebrew (>= 0.0.0)
+      python (>= 0.0.0)
+
 DEPENDENCIES
   osx (>= 0)
+  python (>= 0)
   sprout-base (>= 0)
   sprout-git (>= 0)
   sprout-homebrew (>= 0)
@@ -134,4 +154,5 @@ DEPENDENCIES
   sprout-rubymine (>= 0)
   sprout-ssh (>= 0)
   sprout-terminal (>= 0)
+  winmill-apps (>= 0)
 
